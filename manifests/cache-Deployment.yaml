@@ -4,7 +4,7 @@ metadata:
   labels:
     app.kubernetes.io/component: cache
     app.kubernetes.io/part-of: talkyard
-    app.kubernetes.io/version: v0.2021.10-e846283fa
+    app.kubernetes.io/version: v0.2022.13-6d49a6e33
   name: cache
   namespace: talkyard
 spec:
@@ -20,7 +20,7 @@ spec:
         name: cache
     spec:
       containers:
-      - image: debiki/talkyard-cache:v0.2021.10-e846283fa
+      - image: debiki/talkyard-cache:v0.2022.13-6d49a6e33
         imagePullPolicy: IfNotPresent
         livenessProbe:
           initialDelaySeconds: 20
