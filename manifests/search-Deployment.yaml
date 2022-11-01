@@ -28,13 +28,6 @@ spec:
         image: debiki/talkyard-search:v0.2022.13-6d49a6e33
         imagePullPolicy: IfNotPresent
         name: search
-        podTemplate:
-          spec:
-          initContainers:
-          - name: sysctl
-            securityContext:
-              privileged: true
-            command: ['sh', '-c', 'sysctl -w vm.max_map_count=262144']
         ports:
         - containerPort: 9300
           name: default
